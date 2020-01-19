@@ -1,0 +1,115 @@
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+  .navbar-light .navbar-brand {
+    color: rgba(0,0,0,.9);
+    max-width: 160px;
+  }
+
+  .h1 {
+    font-size: 25px;
+  }
+
+  .banner .template_btn,
+  .banner .form-group {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .banner .download {
+    flex-direction: column;
+  }
+
+  .about-us .about-image {
+    min-height: 350px;
+  }
+
+  .about-us .template_btn {
+    max-height: unset;
+  }
+
+  /* search result page */
+  .result_item .description_data .vote span,
+  .result_item .item_description .description_data .main_price {
+    font-size: 16px;
+  }
+
+  .result_item .description_data .vote span {
+    font-size: 16px;
+  }
+
+  .pagination .page-link {
+    width: 30px;
+    height: 30px;
+    padding-top: 15px;
+  }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media(max-width: 991px) { 
+  .footer ul {
+    margin-bottom: 20px;
+  }
+
+  /* search result page */
+  .search_result .search {
+    padding-bottom: 0;
+    margin-bottom: 60px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .h1 {
+    font-size: 27px;
+  }
+  
+  .banner .btn-lg {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+ }
+/* Large devices (desktops and laptop) */
+@media (min-width: 992px) {
+  .search-sticky {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .make-me-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 0 10px;
+  }
+ }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1400px) {
+  .about-txt {
+    max-width: 70%;
+  }
+ }
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1600px) {
+    .home .container {
+      max-width: 1400px;
+    }
+ 
+    .navbar-expand-xl .navbar-nav .nav-link {
+      padding-right: 1rem;
+      padding-left: 1rem;
+    }
+
+    /* search result page*/
+    .search_result .header .container,
+    .search_result .footer .container {
+      max-width: 1400px;
+    }
+
+   
+ }

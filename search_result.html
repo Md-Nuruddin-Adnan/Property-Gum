@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/> 
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Property Gum</title>
+  <link rel='shortcut icon' href='images/PropertyGum_fav_icon.png' type='image/x-icon'>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/search_result.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="search_result"> 
+ 
+  <!-- === header section start === -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar navbar-expand-xl navbar-light">
+        <a class="navbar-brand" href="index.html">
+          <div class="logo"><img src="images/PropertyGum_LOGO.png" alt="logo" class="logo-img img-fluid"></div>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+           
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"> HOME </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="search_result.html"> PROPERTIES </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> PROPERTY PRICE CHANGES </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> LEADERBOARD </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> LOGIN </a>
+            </li>            
+          </ul>
+          <a href="#" class= "btn btn-lg template_btn">SIGN UP<i class="fas fa-arrow-right"></i></a>
+        </div>
+      </nav>
+     
+    </div>
+  </header>
+  <!-- ===//end of header section === -->
+ 
+
+ 
+  <!-- === top heading section start === -->
+  <div class="container top_heading py-5">
+    <h1 class="h1 ">Reviews of Properties for Sale</h1>
+    <p>Properties for sale on RightMove rated & reviewed by community</p>
+  </div>
+  <!-- ===//end of top heading section === -->
+ 
+
+ 
+  <!-- === Main content section start === -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <!-- === search section start ===-->
+        <div class="col-lg-4 col-md-12 ">
+          <div class="search-sticky">
+            <div class="make-me-sticky">
+              <div class="search">
+                <div class="heading d-flex align-items-center justify-content-between">
+                  <h4 class="filter-txt">Filters</h4>
+                  <button class="btn clr-all-btn">Clear All</button>
+                </div>
+
+                <div class="px-3">
+                  <!-- search input box start -->
+                  <div class="search_box py-3 position-relative">
+                    <form action="" method="">
+                      <label for="search-input">First part of post code</label>
+                      <input type="text" id="search-input" class="form-control" placeholder="e.g. HA1, E1">
+                      <button type="submit" class="btn search-btn"><i class="fas fa-search"></i></button>
+                    </form>
+                  </div><!--//search input box -->
+
+                  <div class="d-lg-block d-md-flex d-sm-flex justify-content-between align-items-center">
+
+                    <!-- sort by part start -->
+                    <div class="sort_by py-4">
+                      <h5 class="sort_by_heading pb-2">Sort By:</h5>
+
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck_1">
+                        <label class="custom-control-label" for="customCheck_1">Most Recent</label>
+                      </div>
+
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck_2" checked>
+                        <label class="custom-control-label" for="customCheck_2">Highest Rating</label>
+                      </div>
+
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck_3">
+                        <label class="custom-control-label" for="customCheck_3">Top Voted</label>
+                      </div>
+
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck_4">
+                        <label class="custom-control-label" for="customCheck_4">Most Watched</label>
+                      </div>
+
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck_5">
+                        <label class="custom-control-label" for="customCheck_5">Most Popular</label>
+                      </div>
+                    </div>
+                    <!--//end of sort by part -->
+
+
+                    <!-- Filter by part start -->
+                    <div class="filter_by pb-4">
+                      <h5 class="filter_by_heading pb-2">filter By:</h5>
+
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="filter_check_1">
+                        <label class="custom-control-label" for="filter_check_1">Show All</label>
+                      </div>
+
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="filter_check_2" checked>
+                        <label class="custom-control-label" for="filter_check_2">Has Reviews</label>
+                      </div>
+
+                    
+                    </div>
+                    <!--//end of filter by part -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ===//end of search section === -->
+
+        <!-- === search_result section start ===-->
+        <div class="col-lg-8 col-md-12">
+          <div class="search_result">
+
+            <a href="#" class="result_item item-1">
+              <div class="row">
+                <div class="col-md-5">
+                  <div class="result_img">
+                    <img src="images/search_result_page/search_result_1.png" alt="search_result_item" class="w-100">
+                  </div>
+                  <div class="img_review d-flex align-items-center">
+                    <div class="ratting d-flex">5.0 <i class="fas fa-star"></i></div>
+                    <div class="review_count">2 Reviews</div>
+                  </div>
+                </div>
+                <div class="col-md-7">
+                  <div class="item_description">
+                    <h5 class="heading">Kings Road, Kingston Upon Thames</h5>
+                    <p class="sub_heading">4 bedroom end of terrace house</p>
+
+                    <div class="description_data my-3 py-2 border-bottom border-top d-flex align-items-center justify-content-between">
+                      <div class="price">
+                        <p>price</p>
+                        <span class="main_price">£499,995</span>
+                        <span class="increment_decrement decrement"><i class="fas fa-arrow-alt-circle-down"></i></span>
+                      </div>
+                      <div class="post">
+                        <p>Post</p>
+                        <span>2</span>
+                      </div>
+                      <div class="watch">
+                        <p>Watch</p>
+                        <span>0</span>
+                      </div>
+                      <div class="vote">
+                        <p>Vote</p>
+                        <span>Over Priced</span>
+                      </div>
+                    </div>
+
+                    <div class="description_para position-relative">
+                      <p>This four bedroom end of terrace house is a lovely property which has loads of space and lots of character, this property would be perfect for a family that...</p>
+                      <img src="images/search_result_page/quotation .png" alt="" class="quotation_img">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a  href="#" class="result_item item-2">
+              <div class="row">
+                <div class="col-md-5">
+                  <div class="result_img">
+                    <img src="images/search_result_page/search_result_2.png" alt="search_result_item" class="w-100">
+                  </div>
+                  <div class="img_review d-flex align-items-center">
+                    <div class="ratting d-flex">5.0 <i class="fas fa-star"></i></div>
+                    <div class="review_count">2 Reviews</div>
+                  </div>
+                </div>
+                <div class="col-md-7">
+                  <div class="item_description">
+                    <h5 class="heading">Mews Close, Harrow</h5>
+                    <p class="sub_heading">4 bedroom end of terrace house</p>
+
+                    <div class="description_data my-3 py-2 border-bottom border-top d-flex align-items-center justify-content-between">
+                      <div class="price">
+                        <p>price</p>
+                        <span class="main_price">£499,995</span>
+                        <span class="increment_decrement increment"><i class="fas fa-arrow-alt-circle-up"></i></span>
+                      </div>
+                      <div class="post">
+                        <p>Post</p>
+                        <span>2</span>
+                      </div>
+                      <div class="watch">
+                        <p>Watch</p>
+                        <span>0</span>
+                      </div>
+                      <div class="vote">
+                        <p>Vote</p>
+                        <span>Over Priced</span>
+                      </div>
+                    </div>
+
+                    <div class="description_para position-relative">
+                      <p>This four bedroom end of terrace house is a lovely property which has loads of space and lots of character, this property would be perfect for a family that...</p>
+                      <img src="images/search_result_page/quotation .png" alt="" class="quotation_img">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a  href="#" class="result_item item-3">
+              <div class="row">
+                <div class="col-md-5">
+                  <div class="result_img">
+                    <img src="images/search_result_page/search_result_3.png" alt="search_result_item" class="w-100">
+                  </div>
+                  <div class="img_review d-flex align-items-center">
+                    <div class="ratting d-flex">5.0 <i class="fas fa-star"></i></div>
+                    <div class="review_count">2 Reviews</div>
+                  </div>
+                </div>
+                <div class="col-md-7">
+                  <div class="item_description">
+                    <h5 class="heading">Bostall Lane, Abbey Wood, SE2</h5>
+                    <p class="sub_heading">4 bedroom end of terrace house</p>
+
+                    <div class="description_data my-3 py-2 border-bottom border-top d-flex align-items-center justify-content-between">
+                      <div class="price">
+                        <p>price</p>
+                        <span class="main_price">£499,995</span>
+                        <span class="increment_decrement equals"><i class="far fa-circle"></i></span>
+                      </div>
+                      <div class="post">
+                        <p>Post</p>
+                        <span>2</span>
+                      </div>
+                      <div class="watch">
+                        <p>Watch</p>
+                        <span>0</span>
+                      </div>
+                      <div class="vote">
+                        <p>Vote</p>
+                        <span>Over Priced</span>
+                      </div>
+                    </div>
+
+                    <div class="description_para position-relative">
+                      <p>This four bedroom end of terrace house is a lovely property which has loads of space and lots of character, this property would be perfect for a family that...</p>
+                      <img src="images/search_result_page/quotation .png" alt="" class="quotation_img">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a  href="#" class="result_item item-4">
+              <div class="row">
+                <div class="col-md-5">
+                  <div class="result_img">
+                    <img src="images/search_result_page/search_result_4.png" alt="search_result_item" class="w-100">
+                  </div>
+                  <div class="img_review d-flex align-items-center">
+                    <div class="ratting d-flex">5.0 <i class="fas fa-star"></i></div>
+                    <div class="review_count">2 Reviews</div>
+                  </div>
+                </div>
+                <div class="col-md-7">
+                  <div class="item_description">
+                    <h5 class="heading">Milford Close London SE2</h5>
+                    <p class="sub_heading">4 bedroom end of terrace house</p>
+
+                    <div class="description_data my-3 py-2 border-bottom border-top d-flex align-items-center justify-content-between">
+                      <div class="price">
+                        <p>price</p>
+                        <span class="main_price">£499,995</span>
+                        <span class="increment_decrement increment"><i class="fas fa-arrow-alt-circle-up"></i></span>
+                      </div>
+                      <div class="post">
+                        <p>Post</p>
+                        <span>2</span>
+                      </div>
+                      <div class="watch">
+                        <p>Watch</p>
+                        <span>0</span>
+                      </div>
+                      <div class="vote">
+                        <p>Vote</p>
+                        <span>Over Priced</span>
+                      </div>
+                    </div>
+
+                    <div class="description_para position-relative">
+                      <p>This four bedroom end of terrace house is a lovely property which has loads of space and lots of character, this property would be perfect for a family that...</p>
+                      <img src="images/search_result_page/quotation .png" alt="" class="quotation_img">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        <!-- ===//end of search_result section === -->
+        <!-- === pagination start === -->
+        <div class="pagination">
+          <ul class="text-center w-100">
+            <li><a href="#" class= "page-link active">1</a></li>
+            <li><a href="#" class= "page-link">2</a></li>
+            <li><a href="#" class= "page-link">3</a></li>
+            <li><a href="#" class= "page-link">4</a></li>
+            <li><a href="#" class= "page-link">5</a></li>
+            <li><a href="#" class= "page-link">6</a></li>
+            <li><a href="#" class= "page-link">5</a></li>
+            <li><a href="#" class= "page-link">8</a></li>
+            <li><a href="#" class= "page-link next">NEXT</a></li>
+          </ul>
+        </div>
+        <!--=== //end of pagination ===-->
+        </div>
+      </div>
+  
+    </div>
+  </section>
+
+  <!-- ===//end of Main content section === -->
+ 
+  
+  <!-- === footer section start === -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7 col-md-12">
+          <div class="row">
+            <div class="col-lg-4">
+              <h5 class="link_heading">Company</h5>
+              <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4">
+              <h5 class="link_heading">Resources</h5>
+              <ul>
+                <li><a href="#">Chrome extension</a></li>
+                <li><a href="#">PropertyBee</a></li>
+                <li><a href="#">Property Price Tracker</a></li>
+                <li><a href="#">Property Price Changes</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4">
+              <h5 class="link_heading">Help & Support</h5>
+              <ul>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Feedback</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-12">
+          <div class="logo mb-3"><a href="index.html"><img src="images/PropertyGum_LOGO.png" alt="logo" class="img-fluid"></a></div>
+          <p>
+            PropertyGum is crowd sourced property market intelligence. It aims to bring sanity in property market by letting crowd rate, vote & write their opinions for property for sale listings. This will help buyers discover cheap & hot properties deals and avoid over-priced or problematic properties and locations.
+          </p>
+        </div>
+      </div>
+
+      <p class="copyright text-center pt-5">© PropertyGum. 2019</p>
+    </div>
+  </footer>
+  <!-- ===//end of footer section === -->
+ 
+
+ 
+
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/custom.js"></script>
+</body>
+</html>
